@@ -2,8 +2,8 @@ name: Setup bronto CLI
 description: Install and verify the bronto CLI, the community command-line client for the Bronto observability platform.
 author: bronto-community
 branding:
-  icon: terminal
-  color: green
+  icon: activity
+  color: yellow
 
 inputs:
   version:

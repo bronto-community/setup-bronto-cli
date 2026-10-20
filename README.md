@@ -1,12 +1,27 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/bronto-community/setup-bronto-cli/main/assets/logomark.png" alt="Bronto logo" width="140">
+</p>
+
 # Setup bronto CLI
 
 [![CI](https://github.com/bronto-community/setup-bronto-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/bronto-community/setup-bronto-cli/actions/workflows/ci.yml)
 
-GitHub Action that installs the [bronto CLI](https://github.com/bronto-community/bronto-cli),
-the community command-line client for the [Bronto](https://bronto.io) observability
-platform, and verifies the download.
+GitHub Action that installs the [bronto CLI](https://github.com/bronto-community/bronto-cli)
+and verifies the download, so your workflows can search logs, send events, and manage
+monitors in [Bronto](https://bronto.io).
 
 It works on Linux, macOS and Windows runners, on amd64 and arm64.
+
+## What is Bronto?
+
+[Bronto](https://bronto.io) is an observability platform for logs, metrics, and traces. It
+queries petabytes of data in under a second, at full fidelity with no sampling, and includes
+one year of hot retention. The bronto CLI is its open-source, community-maintained
+command-line client: search and tail logs, explore traces, send events, and manage
+resources such as datasets and monitors, from a terminal or a CI job.
+
+New to Bronto? **[Start a free trial](https://bronto.io/signup)**, create an API key, and
+store it as a repository secret (for example `BRONTO_API_KEY`).
 
 ## Usage
 
@@ -62,7 +77,19 @@ Pick the narrowest key for the job: an ingestion-only key for jobs that only run
 Report problems with the action here. Report anything about the bronto CLI itself on
 [bronto-cli's issue tracker](https://github.com/bronto-community/bronto-cli/issues).
 
+## Support
+
+This action and the bronto CLI are open-source community projects from Bronto: free to use
+and open to contributions, but not covered by Bronto's product support.
+
 ## Versioning
 
 Releases are tagged `vX.Y.Z`, and the major tag (`v1`) moves to the latest release in
 that major version. Use `@v1` to get fixes automatically, or pin a full commit SHA.
+
+## Trademarks
+
+Bronto and the Bronto logo are trademarks of Bronto, used here with permission. See
+[TRADEMARK.md](https://github.com/bronto-community/bronto-cli/blob/main/TRADEMARK.md) in
+bronto-cli. The code in this repository is BSD-2-Clause licensed; the license does not
+cover Bronto's marks.
